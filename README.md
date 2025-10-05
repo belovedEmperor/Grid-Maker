@@ -22,9 +22,12 @@ p.s. This note should be removed before project submission.
 # PLEASE USE THE PROJECT FOR THE GANTT CHART
 Project located at:
 
-![project image](https://github.com/user-attachments/assets/2d77e6d2-d7fa-4d7e-913c-0b6adba451f3)
+![](https://github.com/user-attachments/assets/2d77e6d2-d7fa-4d7e-913c-0b6adba451f3)
 ![](https://github.com/user-attachments/assets/80d51ce8-aee9-490e-b74e-5aa75bd48a97)
+![](https://github.com/user-attachments/assets/7f6d2810-8a38-42a9-9616-3ed793e36a6d)
 
+You can add issues either through the project or through the normal repo issue menu.<br>
+Please add one issue per branch/user story.<br>
 ***
 
 ## Documentation
