@@ -1,0 +1,17 @@
+tr,
+td {
+  border: 5px;
+  border-style: solid;
+}
+td {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+}
+
+#grid-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
