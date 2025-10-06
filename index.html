@@ -10,5 +10,36 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="images/grid-icon.png" />
   </head>
-  <body></body>
+  <body>
+   <div id = "buttoms">
+
+
+    <button id = "add_row">Add Row</button>
+
+   </div>
+   <table id = "grid"></table>
+   
+  </body>
+
+  <script>
+    const table = document.getElementById("grid");
+
+   document.getElementById("add_row").onclick = function () {
+   let numCols = 1;
+
+  if (table.rows.length > 0) {
+    numCols = table.rows[0].cells.length;
+  } else{
+    numCols = 1;
+  }
+  // Now add a row with numCols cells
+  const newRow = table.insertRow();
+  for (let i = 0; i < numCols; i++) {
+    const cell = newRow.insertCell();
+    const rowNum = newRow.rowIndex;
+    cell.textContent = "";
+  }
+};
+
+  </script>
 </html>
