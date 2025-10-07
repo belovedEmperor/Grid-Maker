@@ -17,6 +17,7 @@
     <button id = "add_row">Add Row</button>
     <button id = "add_col">Add Col</button>
     <button id = "remove_row">Remove Row</button>
+    <button id = "remove_col">Remove Col</button>
 
    </div>
    <table id = "grid"></table>
@@ -68,6 +69,20 @@
     else{
       console.log("This table is empty and rows cannot be removed!")
     }
-  }
+  };
+      // ------------ delete col feature ----------------
+    document.getElementById("remove_col").onclick = function(){
+      if(table.rows.length === 0){
+        return;
+      }
+      
+      const lastCellIndex = table.rows[0].cells.length - 1;
+
+      for(i = 0; i < table.rows.length; i++){
+        const row = table.rows[i];
+        row.deleteCell(lastCellIndex);
+      }
+    }
+ 
   </script>
 </html>
