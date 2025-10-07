@@ -15,6 +15,7 @@
 
 
     <button id = "add_row">Add Row</button>
+    <button id = "add_col">Add Col</button>
 
    </div>
    <table id = "grid"></table>
@@ -25,7 +26,7 @@
     const table = document.getElementById("grid");
 
    document.getElementById("add_row").onclick = function () {
-   let numCols = 1;
+   let numCols;
 
   if (table.rows.length > 0) {
     numCols = table.rows[0].cells.length;
@@ -39,7 +40,22 @@
     const rowNum = newRow.rowIndex;
     cell.textContent = "";
   }
+
 };
+
+  document.getElementById("add_col").onclick = function() {
+    // check if there's a row exist if not added one automatically when user clicking on Add Col
+      if(table.rows.length === 0){
+        document.getElementById("add_row").click();
+        return;
+      }
+
+      for(let i = 0; i < table.rows.length; i++){
+        const row = table.rows[i];
+        const newCell = row.insertCell();
+        newCell.textContent = "";
+      }
+    };
 
   </script>
 </html>
