@@ -16,6 +16,7 @@
 
     <button id = "add_row">Add Row</button>
     <button id = "add_col">Add Col</button>
+    <button id = "remove_row">Remove Row</button>
 
    </div>
    <table id = "grid"></table>
@@ -25,6 +26,7 @@
   <script>
     const table = document.getElementById("grid");
 
+    // ------------ add row feature ---------------
    document.getElementById("add_row").onclick = function () {
    let numCols;
 
@@ -43,6 +45,7 @@
 
 };
 
+  // ---------- add col feature -------------
   document.getElementById("add_col").onclick = function() {
     // check if there's a row exist if not added one automatically when user clicking on Add Col
       if(table.rows.length === 0){
@@ -57,5 +60,14 @@
       }
     };
 
+       // ------------ delete row feature --------------
+  document.getElementById("remove_row").onclick = function(){
+    if(table.rows.length > 0){
+      table.deleteRow(-1);
+    }
+    else{
+      console.log("This table is empty and rows cannot be removed!")
+    }
+  }
   </script>
 </html>
