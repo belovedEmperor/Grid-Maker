@@ -26,7 +26,8 @@ Project located at:
 ![](https://github.com/user-attachments/assets/80d51ce8-aee9-490e-b74e-5aa75bd48a97)
 ![](https://github.com/user-attachments/assets/7f6d2810-8a38-42a9-9616-3ed793e36a6d)
 
-You can add issues either through the project or through the normal repo issue menu.<br>
+You can add *issues* either through the project or through the normal repo issue menu.<br>
+Adding *pull requests* to the project also works, just make sure to set the dates and provide a descriptive title.<br>
 Please add one issue per branch/user story.<br>
 ***
 
