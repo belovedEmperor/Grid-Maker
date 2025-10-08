@@ -1,3 +1,6 @@
+// Color Variable to be used in functions
+let selectedColor = "";
+
 function addRow() {
   const table = document.getElementById("grid");
 
@@ -53,3 +56,11 @@ function deleteColumn() {
     row.deleteCell(lastCellIndex);
   }
 }
+
+// select color function
+const colorSelect = document.getElementById("select");
+
+colorSelect.addEventListener("change", function() {
+  selectedColor = this.value;
+  console.log("Selected color:", selectedColor); // for testing
+});
