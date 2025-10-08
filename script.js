@@ -73,3 +73,9 @@ grid.addEventListener("click", function(clickedPart) {
     clickedPart.target.style.backgroundColor = selectedColor;
   }
 });
+
+
+document.getElementById("add_row").onclick = addRow;
+document.getElementById("add_col").onclick = addColumn;
+document.getElementById("remove_row").onclick = deleteRow;
+document.getElementById("remove_col").onclick = deleteColumn;
