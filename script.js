@@ -64,3 +64,12 @@ colorSelect.addEventListener("change", function() {
   selectedColor = this.value;
   console.log("Selected color:", selectedColor); // for testing
 });
+
+// Color single cell function
+let grid = document.getElementById("grid")
+grid.addEventListener("click", function(clickedPart) {
+  // clickedPart.target is the part that was clicked
+  if (clickedPart.target.tagName === "TD" && selectedColor) { //check for type (if cell) and valid color
+    clickedPart.target.style.backgroundColor = selectedColor;
+  }
+});
