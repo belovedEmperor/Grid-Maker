@@ -74,3 +74,13 @@ grid.addEventListener("click", function (clickedPart) {
     clickedPart.target.style.backgroundColor = selectedColor;
   }
 });
+
+function colorAllUncolored() {
+  const table = document.getElementById("grid");
+  const cells = table.querySelectorAll("td");
+  for (const cell of cells) {
+    if (cell.tagName === "TD" && cell.style.backgroundColor === "") {
+      cell.style.backgroundColor = selectedColor;
+    }
+  }
+}
