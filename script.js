@@ -92,3 +92,11 @@ function colorAll() {
     cell.style.backgroundColor = selectedColor;
   }
 }
+
+function clearAll() {
+  const table = document.getElementById("grid");
+  const cells = table.querySelectorAll("td");
+  for (const cell of cells) {
+    cell.style.backgroundColor = "";
+  }
+}
