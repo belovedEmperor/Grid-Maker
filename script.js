@@ -84,3 +84,11 @@ function colorAllUncolored() {
     }
   }
 }
+
+function colorAll() {
+  const table = document.getElementById("grid");
+  const cells = table.querySelectorAll("td");
+  for (const cell of cells) {
+    cell.style.backgroundColor = selectedColor;
+  }
+}
