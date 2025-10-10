@@ -60,22 +60,27 @@ function deleteColumn() {
 // select color function
 const colorSelect = document.getElementById("select");
 
-colorSelect.addEventListener("change", function() {
+colorSelect.addEventListener("change", function () {
   selectedColor = this.value;
   console.log("Selected color:", selectedColor); // for testing
 });
 
 // Color single cell function
-let grid = document.getElementById("grid")
-grid.addEventListener("click", function(clickedPart) {
+let grid = document.getElementById("grid");
+grid.addEventListener("click", function (clickedPart) {
   // clickedPart.target is the part that was clicked
-  if (clickedPart.target.tagName === "TD" && selectedColor) { //check for type (if cell) and valid color
+  if (clickedPart.target.tagName === "TD" && selectedColor) {
+    //check for type (if cell) and valid color
     clickedPart.target.style.backgroundColor = selectedColor;
   }
 });
 
-
-document.getElementById("add_row").onclick = addRow;
-document.getElementById("add_col").onclick = addColumn;
-document.getElementById("remove_row").onclick = deleteRow;
-document.getElementById("remove_col").onclick = deleteColumn;
+function colorAllUncolored() {
+  const table = document.getElementById("grid");
+  const cells = table.querySelectorAll("td");
+  for (const cell of cells) {
+    if (cell.tagName === "TD" && cell.style.backgroundColor === "") {
+      cell.style.backgroundColor = selectedColor;
+    }
+  }
+}
