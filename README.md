@@ -1,35 +1,9 @@
 # Grid-Maker
+Project/Assignment 2 for CSci 39548
 
-# NOTE TO ALL - EACH USER STORY REQUIRES A NEW BRANCH.
-User stories provided by professor:
-1. select an action from a menu
-2. add rows to the grid
-3. add columns to the grid
-4. remove rows from the grid
-5. remove columns from the grid
-6. select a color from a dropdown menu of colors
-7. color a single cell, by clicking on the cell, and change its color to the selected color
-8. color all uncolored cells with the selected color
-9. color all cells with the selected color
-10. clear all cells' color and restore all cells to their initial color (e.g., white)
+[Link to deployed page](https://belovedemperor.github.io/Grid-Maker/)
 
-Please also *check pull requests* before cloning or pulling from main.<br>
-This will minimize merge conflicts.<br>
-Please be cautious when deleting files as well.
-
-p.s. This note should be removed before project submission.
-
-# PLEASE USE THE PROJECT FOR THE GANTT CHART
-Project located at:
-
-![](https://github.com/user-attachments/assets/2d77e6d2-d7fa-4d7e-913c-0b6adba451f3)
-![](https://github.com/user-attachments/assets/80d51ce8-aee9-490e-b74e-5aa75bd48a97)
-![](https://github.com/user-attachments/assets/7f6d2810-8a38-42a9-9616-3ed793e36a6d)
-
-You can add *issues* either through the project or through the normal repo issue menu.<br>
-Adding *pull requests* to the project also works, just make sure to set the dates and provide a descriptive title.<br>
-Please add one issue per branch/user story.<br>
-***
+Team Members: Cheng Yue (username: CY343), Christopher Altamirano (username: caltam600), and Jason Huang (username: belovedEmperor)
 
 ## Documentation
 ### Feature Requirements
@@ -51,8 +25,11 @@ Please add one issue per branch/user story.<br>
     2. Grid Display: The application shall display a grid of cells that is visually clear and easy to interact with.
 
 ### Application Architecture Description and Diagram
-***Undetermined***<br>
-Will be added at a later date.
+This application consits of a single web page with buttons and a grid.<br>
+The buttons trigger JavaScript functions on click.<br>
+The grid has a listener attached so that if a cell is clicked, a selected color will be displayed.
+
+![](https://github.com/user-attachments/assets/4646de77-408e-48d6-a320-2cb81376d0d0)
 
 ### Epics, User Stories, and Acceptance Criteria
 Epic 1: Grid Structure Management
@@ -90,5 +67,6 @@ Epic 2: Grid Coloring
         - When I click the "Clear All" button, the background color of every cell resets to its default state.
 
 ### Project Schedule
-***Undetermined***<br>
-Will be added at a later date based on Github project issues Gantt chart.
+[Github Project/Gantt Chart Link](https://github.com/users/belovedEmperor/projects/3/views/1)
+
+![](https://github.com/user-attachments/assets/dae90809-dada-4b9e-8a6a-51120edf84dd)
