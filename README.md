@@ -1,6 +1,4 @@
 # Grid-Maker
-Project/Assignment 2 for CSci 39548
-
 [Link to deployed page](https://belovedemperor.github.io/Grid-Maker/)
 
 Team Members: Cheng Yue (username: CY343), Christopher Altamirano (username: caltam600), and Jason Huang (username: belovedEmperor)
